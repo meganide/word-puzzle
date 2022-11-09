@@ -24,7 +24,6 @@ const WORDS = [
 ];
 
 let currentWordObject;
-let prevChar;
 let prevWord;
 
 // ********************************** FUNCTIONS **********************************
@@ -137,7 +136,6 @@ async function updateChar(e) {
   e.target.value = e.target.value.replace(/[^A-Za-z]/g, '').replace(/(\..*)\./g, '$1');
 
   // if input field not empty
-  prevChar = e.target.value;
   if (e.target.value !== '') {
     // input read only while we wait for api
     let newWord = makeReadOnly();
