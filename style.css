@@ -1,0 +1,60 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(19, 19, 19);
+}
+
+input {
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  width: 45px;
+  text-align: center;
+  background-color: rgb(30, 30, 30);
+}
+
+input::selection {
+  background-color: rgb(201, 130, 0);
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+
+.word-puzzle {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+
+#message {
+  color: white;
+}
+
+#error {
+  color: red;
+}
+
+#word-list, h3 {
+  color: gray;
+}
